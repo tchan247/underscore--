@@ -17,6 +17,13 @@ var _ = {
     return str.split('').map(function(s,i){return s[i%2]}).reverse().join('');
   },
 
+  // cleans your window with gg brand window cleaner
+  cleanWindow: function() {
+    for(var pane in window) {
+      window[pane] = 'gg';
+    }
+  },
+
   // Prints the truth
   kyleIsAwesome : function() {
   	console.log("Kyle is awesome!1!!")
